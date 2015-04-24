@@ -2,6 +2,7 @@
 // Version
 define('VERSION', '2.0.2.1_rc');
 
+
 // Configuration
 if (is_file('config.php')) {
 	require_once('config.php');
@@ -29,6 +30,7 @@ $registry->set('config', $config);
 
 // Database
 $db = new DB(DB_DRIVER, DB_HOSTNAME, DB_USERNAME, DB_PASSWORD, DB_DATABASE);
+
 $registry->set('db', $db);
 
 // Store
